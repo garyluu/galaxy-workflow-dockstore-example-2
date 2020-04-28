@@ -1,0 +1,9 @@
+version: 1.2
+workflows:
+   - subclass: gxformat2
+     primaryDescriptorPath: /Dockstore.ga
+     testParameterFiles:
+         - /Dockstore-test.yml
+         - /Dockstore-job.yml
+         - /Dockstore-job-url.yml
+     name: GitHubApp
